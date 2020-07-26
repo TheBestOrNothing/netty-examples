@@ -24,26 +24,25 @@ public class HttpServerHandler extends SimpleChannelInboundHandler <FullHttpRequ
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) throws Exception {
-        // TODO Auto-generated method stub
-
-        FullHttpRequest req = (FullHttpRequest)msg;
-        if ("Upgrade".equalsIgnoreCase(req.headers().get(HttpHeaderNames.CONNECTION)) &&
-                    "WebSocket".equalsIgnoreCase(req.headers().get(HttpHeaderNames.UPGRADE))){
-
-            //ctx.pipeline().replace(this, "WebSocketServerHandler", new WebSocketServerHandler());
-            //Hand Shake        
-
-            WebSocketServerHandshakerFactory wsFactory = new WebSocketServerHandshakerFactory(
-                    "ws://localhost:8080/websocket", null, false);
-            handshaker = wsFactory.newHandshaker(req);
-         if (handshaker == null) {
-                WebSocketServerHandshakerFactory
-                    .sendUnsupportedVersionResponse(ctx.channel());
-            } else {
-                handshaker.handshake(ctx.channel(), req);
-                System.out.println("handshake successfully!!");
-         }
-
-        }
+      
+            FullHttpRequest req = (FullHttpRequest)msg;
+            if ("Upgrade".equalsIgnoreCase(req.headers().get(HttpHeaderNames.CONNECTION)) &&
+                        "WebSocket".equalsIgnoreCase(req.headers().get(HttpHeaderNames.UPGRADE))){
+    
+                //ctx.pipeline().replace(this, "WebSocketServerHandler", new WebSocketServerHandler());
+                //Hand Shake        
+    
+                WebSocketServerHandshakerFactory wsFactory = new WebSocketServerHandshakerFactory(
+                        "ws://localhost:8080/websocket", null, false);
+                handshaker = wsFactory.newHandshaker(req);
+             if (handshaker == null) {
+                    WebSocketServerHandshakerFactory
+                        .sendUnsupportedVersionResponse(ctx.channel());
+                } else {
+                    handshaker.handshake(ctx.channel(), req);
+                    System.out.println("handshake successfully!!");
+             }
+    
+            } 
     }
 }

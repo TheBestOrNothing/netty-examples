@@ -48,7 +48,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                          <mainClass>com.mycompany.app.HttpClient</mainClass>
+                          <mainClass>com.mycompany.app.WebSocketClient</mainClass>
                         </manifest>
                     </archive>
               </configuration>

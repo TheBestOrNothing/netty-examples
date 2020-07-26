@@ -5,7 +5,7 @@
   <artifactId>multiModules</artifactId>
   <packaging>pom</packaging>
   <version>2020</version>
-  <name>time</name>
+  <name>WebSocket</name>
   <url>http://maven.apache.org</url>
 
   <modules>
