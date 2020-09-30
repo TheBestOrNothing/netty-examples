@@ -1,0 +1,5 @@
+com/mycompany/app/BouncyCastleSelfSignedCertGenerator.class
+com/mycompany/app/HttpsServer.class
+com/mycompany/app/SelfSignedCertificate.class
+com/mycompany/app/HttpsServerInitializer.class
+com/mycompany/app/HttpsServerHandler.class

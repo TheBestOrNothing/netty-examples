@@ -1,0 +1,4 @@
+com/mycompany/app/HttpsSSLHandler.class
+com/mycompany/app/HttpsClient.class
+com/mycompany/app/HttpsClientInitializer.class
+com/mycompany/app/HttpsClientHandler.class

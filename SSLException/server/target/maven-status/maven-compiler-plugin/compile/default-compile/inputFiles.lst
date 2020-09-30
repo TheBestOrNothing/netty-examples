@@ -1,0 +1,5 @@
+/home/gongzhe/tmp/netty-examples/SSLException/server/src/main/java/com/mycompany/app/SelfSignedCertificate.java
+/home/gongzhe/tmp/netty-examples/SSLException/server/src/main/java/com/mycompany/app/BouncyCastleSelfSignedCertGenerator.java
+/home/gongzhe/tmp/netty-examples/SSLException/server/src/main/java/com/mycompany/app/HttpsServer.java
+/home/gongzhe/tmp/netty-examples/SSLException/server/src/main/java/com/mycompany/app/HttpsServerHandler.java
+/home/gongzhe/tmp/netty-examples/SSLException/server/src/main/java/com/mycompany/app/HttpsServerInitializer.java
